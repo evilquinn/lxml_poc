@@ -1,0 +1,13 @@
+
+language: cpp
+compiler: gcc
+dist: trusty
+
+install:
+    - sudo apt-get install cmake libxml2-dev
+
+script:
+    - mkdir build
+    - cd build
+    - cmake ../.
+    - make
